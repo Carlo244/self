@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Music Tatse</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <style>
+        /* Styling for the container */
+.container {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Paragraph Style */
+p {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Carousel and Image Styling */
+.carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+    transition: transform 0.5s ease;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Artist Cards */
+.artist-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.artist-card img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    height: 200px;
+    object-fit: cover;
+}
+
+.artist-card img:hover {
+    transform: scale(1.1);
+}
+
+/* Card Body Styling */
+.card-body {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+      </style>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="#">carloooo</a>
+        <!-- Toggler button for mobile view -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More About Me
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="index.html">Home</a>
+                <a class="dropdown-item" href="music.html">Favorite Music</a>
+                <a class="dropdown-item" href="places.html">Dream Places</a>
+                <a class="dropdown-item" href="hobbies.html">Hobbies</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="container mt-4">
+        <h1>Favorite Artist</h1>
+        <p>I enjoy a wide variety of music genres, from classical symphonies to modern pop hits. Some of my favorite artists include:</p>
+    
+        <!-- Image Slider -->
+        <div id="artistCarousel" class="carousel slide mb-4" data-bs-ride="carousel"  data-bs-interval="3500">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://www.nme.com/wp-content/uploads/2022/09/blackpink-title-track-shut-down-born-pink-album-announcement.jpg" class="d-block w-100" alt="Blackpink">
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn.wegow.com/media/artists/beabadoobee/beabadoobee-1586162230.7939162.2560x1440.jpg" class="d-block w-100" alt="beabadoobee">
+            </div>
+            <div class="carousel-item">
+              <img src="https://media.pitchfork.com/photos/5d443bb1f01d89000931ad52/2:1/w_2560%2Cc_limit/Clairo.jpg" class="d-block w-100" alt="Clairo">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.mb.com.ph/production/mb-mkt-neo-prod-1-uploads-2/media/Grent_Perez_2becf8ce21/Grent_Perez_2becf8ce21.jpg" class="d-block w-100" alt="grent perez">
+            </div>
+            <div class="carousel-item">
+              <img src="https://escutai.com/wp-content/uploads/2023/12/laufey.jpeg" class="d-block w-100" alt="Laufey">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#artistCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#artistCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    
+        <!-- Artist Cards -->
+        <div class="row">
+          <!-- Blackpink -->
+          <div class="col-md-4 mb-4">
+            <div class="card artist-card">
+              <img src="https://www.nme.com/wp-content/uploads/2022/09/blackpink-title-track-shut-down-born-pink-album-announcement.jpg" class="card-img-top" alt="Blackpink">
+              <div class="card-body">
+                <h5 class="card-title">Blackpink</h5>
+                <p class="card-text">Blackpink is a South Korean girl group known for their catchy pop hits and incredible performances.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- beabadoobee -->
+          <div class="col-md-4 mb-4">
+            <div class="card artist-card">
+              <img src="https://cdn.wegow.com/media/artists/beabadoobee/beabadoobee-1586162230.7939162.2560x1440.jpg" class="card-img-top" alt="beabadoobee">
+              <div class="card-body">
+                <h5 class="card-title">beabadoobee</h5>
+                <p class="card-text">beabadoobee is a Filipino-British singer-songwriter known for her dreamy and nostalgic tracks.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Clairo -->
+          <div class="col-md-4 mb-4">
+            <div class="card artist-card">
+              <img src="https://media.pitchfork.com/photos/5d443bb1f01d89000931ad52/2:1/w_2560%2Cc_limit/Clairo.jpg" class="card-img-top" alt="Clairo">
+              <div class="card-body">
+                <h5 class="card-title">Clairo</h5>
+                <p class="card-text">Clairo is an American artist who blends bedroom pop and indie vibes into heartfelt songs.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- grent perez -->
+          <div class="col-md-4 mb-4">
+            <div class="card artist-card">
+              <img src="https://images.mb.com.ph/production/mb-mkt-neo-prod-1-uploads-2/media/Grent_Perez_2becf8ce21/Grent_Perez_2becf8ce21.jpg" class="card-img-top" alt="grent perez">
+              <div class="card-body">
+                <h5 class="card-title">grent perez</h5>
+                <p class="card-text">grent perez is an Australian musician whose soulful music resonates with audiences worldwide.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Laufey -->
+          <div class="col-md-4 mb-4">
+            <div class="card artist-card">
+              <img src="https://escutai.com/wp-content/uploads/2023/12/laufey.jpeg" class="card-img-top" alt="Laufey">
+              <div class="card-body">
+                <h5 class="card-title">Laufey</h5>
+                <p class="card-text">Laufey is an Icelandic-Chinese singer known for her blend of jazz and classical-inspired music.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <footer class="bg-light text-center py-3 mt-4">
+        <p>&copy; 2025 My Website. All Rights Reserved.</p>
+      </footer>
+    </body>
+    </html>
+  </body>
+</html>
