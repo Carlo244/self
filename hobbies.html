@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Music Taste</title>
+    <title>Random Hobbies</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -61,7 +61,12 @@
         font-size: 1rem;
         color: #555;
       }
-
+      .card img {
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        height: 200px;
+        object-fit: cover;
+      }
       /* Footer Styling */
       footer {
         background-color: #343a40;
@@ -71,23 +76,6 @@
 
       footer p {
         margin: 0;
-      }
-
-      /* Media Queries for Responsiveness */
-      @media (max-width: 768px) {
-        .row {
-          justify-content: center;
-        }
-
-        .card {
-          max-width: 45%;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .card {
-          max-width: 100%;
-        }
       }
     </style>
   </head>
@@ -102,7 +90,6 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <a class="navbar-brand" href="index.html">carloooo</a>
@@ -152,6 +139,11 @@
       <div class="row">
         <div class="col-md-6">
           <div class="card">
+            <img
+              src="https://assets.goodereader.com/blog/uploads/images/2025/01/28083550/manga-kindle-540x304.jpg"
+              class="card-img-top"
+              alt="read"
+            />
             <div class="card-body">
               <h5 class="card-title">Reading</h5>
               <p class="card-text">
@@ -167,6 +159,11 @@
 
         <div class="col-md-6">
           <div class="card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Photographer_Photographing_Nevada_Mountains.jpg"
+              class="card-img-top"
+              alt="photo"
+            />
             <div class="card-body">
               <h5 class="card-title">Photography</h5>
               <p class="card-text">
@@ -183,6 +180,11 @@
 
         <div class="col-md-6">
           <div class="card">
+            <img
+              src="https://i.ytimg.com/vi/_ZyzRPAkTQs/maxresdefault.jpg"
+              class="card-img-top"
+              alt="cook"
+            />
             <div class="card-body">
               <h5 class="card-title">Cooking</h5>
               <p class="card-text">
@@ -199,6 +201,11 @@
 
         <div class="col-md-6">
           <div class="card">
+            <img
+              src="https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/Brap4t-Afjh0a4y4s/videoblocks-playing-video-games-on-smartphone_hwxdvrypv_thumbnail-1080_01.png"
+              class="card-img-top"
+              alt="game"
+            />
             <div class="card-body">
               <h5 class="card-title">Online Games</h5>
               <p class="card-text">
